@@ -1,11 +1,11 @@
-def prime?(integer)
-  if integer <= 1
+def prime?(num)
+  if num <= 1
     return false
-  elsif integer == 2 || integer == 3
+  elsif num <= 3
     return true
   else
-    (2..integer/2).none? do |n|
-      integer % n == 0
+    (2..num/2).none? do |x|
+      num % x == 0
     end
   end
 end
